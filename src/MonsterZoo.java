@@ -30,10 +30,6 @@ public class MonsterZoo {
         System.out.println(this.distance + "km歩いた．");
     }
 
-    public String[] getUserMonster() {
-        return userMonster;
-    }
-
     public int getBalls() {
         return itemsManager.getBalls();
     }

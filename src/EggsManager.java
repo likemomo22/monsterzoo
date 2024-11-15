@@ -24,10 +24,10 @@ public class EggsManager {
         for (int i = 0; i < this.eggs.length; i++) {
             if (this.eggs[i] && this.eggDistances[i] >= 3) {
                 System.out.println("卵が孵った！");
-                String monster = monsterZukan.getRandomMonster();
+                Monster monster = monsterZukan.getRandomMonster();
                 System.out.println(monster + "が産まれた！");
 
-                userMonsterManager.addUserMonster(monster);
+                userMonsterManager.addUserMonster(monster.getName());
                 this.eggs[i] = false;
                 this.eggDistances[i] = 0.0;
             }
